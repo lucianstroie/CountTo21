@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/lucianstroie/CountTo21#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "mathjs": "^3.9.3",
     "webpack": "^2.2.1"
   }
