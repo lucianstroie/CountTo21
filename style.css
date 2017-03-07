@@ -41,3 +41,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.background {
+  background-color: black;
+}
+
+.game-board {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#myChart {
+  margin: 0 auto;
+  max-width: 800px;
+}
