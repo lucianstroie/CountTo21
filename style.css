@@ -49,9 +49,67 @@ table {
 .game-board {
   margin: 0 auto;
   max-width: 800px;
+
+}
+
+.game-board-img {
+  height: 389px;
+  width: 800px;
+  background: url(./pictures/perfect-blackjack-table-layout.jpg);
+  position: relative;
 }
 
 #myChart {
   margin: 0 auto;
   max-width: 800px;
+}
+
+.place-bet {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.playing-cards card {
+  height: 23%;
+  width: 9%;
+  position: absolute;
+  background: url(./pictures/back_pc.png) no-repeat;
+  background-size: contain !important;
+}
+
+.dealer .first {
+  top: 10%;
+  left: 47%;
+}
+.dealer .second {
+  top: 10%;
+  left: 50%;
+}
+
+.player1 .first {
+  top: 44%;
+  left: 47%;
+}
+.player1 .second {
+  top: 44%;
+  left: 50%;
+}
+.player2 .first {
+  top: 41%;
+  left: 29%;
+}
+.player2 .second {
+  top: 41%;
+  left: 32%;
+}
+.player3 .first {
+  top: 41%;
+  left: 69%;
+}
+.player3 .second {
+  top: 41%;
+  left: 66%;
 }
