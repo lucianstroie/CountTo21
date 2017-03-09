@@ -68,6 +68,10 @@ table {
   position: absolute;
 }
 
+.get-hit {
+  position: absolute;
+}
+
 .hidden {
   display: none;
 }
@@ -80,22 +84,25 @@ table {
   background-size: contain !important;
 }
 
-.dealer .first {
-  top: 10%;
-  left: 47%;
-}
-.dealer .second {
-  top: 10%;
-  left: 50%;
-}
-
 .player1 .first {
   top: 44%;
   left: 47%;
 }
 .player1 .second {
   top: 44%;
-  left: 50%;
+  left: 49%;
+}
+.player1 .third {
+  top: 44%;
+  left: 51%;
+}
+.player1 .fourth {
+  top: 44%;
+  left: 53%;
+}
+.player1 .fifth {
+  top: 44%;
+  left: 55%;
 }
 .player2 .first {
   top: 41%;
@@ -103,13 +110,57 @@ table {
 }
 .player2 .second {
   top: 41%;
-  left: 32%;
+  left: 31%;
+}
+.player2 .third {
+  top: 41%;
+  left: 33%;
+}
+.player2 .fourth {
+  top: 41%;
+  left: 35%;
+}
+.player2 .fifth {
+  top: 41%;
+  left: 37%;
 }
 .player3 .first {
   top: 41%;
-  left: 69%;
+  left: 66%;
 }
 .player3 .second {
   top: 41%;
-  left: 66%;
+  left: 68%;
+}
+.player3 .third {
+  top: 41%;
+  left: 70%;
+}
+.player3 .fourth {
+  top: 41%;
+  left: 72%;
+}
+.player3 .fifth {
+  top: 41%;
+  left: 74%;
+}
+.dealer .first {
+  top: 10%;
+  left: 47%;
+}
+.dealer .second {
+  top: 10%;
+  left: 49%;
+}
+.dealer .third {
+  top: 10%;
+  left: 51%;
+}
+.dealer .fourth {
+  top: 10%;
+  left: 53%;
+}
+.dealer .fifth {
+  top: 10%;
+  left: 55%;
 }
