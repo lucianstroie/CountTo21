@@ -64,6 +64,18 @@ table {
   max-width: 800px;
 }
 
+.not-footer {
+  margin-top: 25px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  height: 100px;
+  box-shadow: 0px 500px 0px 500px black;
+}
+.not-footer a {
+  color: white;
+}
+
 .place-bet {
   position: absolute;
 }
