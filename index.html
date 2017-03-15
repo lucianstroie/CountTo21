@@ -17,17 +17,16 @@
       <div class='game-board'>
         <div class="game-board-img" >
           <form class="place-bet hidden" id="place-bet">
-            Click to place bet
-            <input type="number" id="quantity">
             <input type="submit" value="Place Bet">
+            Click to place bet
+            <input type="number" min="0" step="1" max="1000" value="5"id="quantity">
           </form>
           <input type="button" value="dealer's turn" class="hidden" id="dealer">
           <input type="button" value="next round" class="hidden" id="next-round">
           <section class="get-hit hidden" id="get-hit">
-            Hit or Stay
-
             <input type="button" value="Hit!" id="draw" >
-            <input type="button" value="Stay!" id="stay" >
+            <input type="button" value="Stay" id="stay" >
+            <br/>
             <input type="button" value="AI" id="ai" >
           </section>
           <div class="playing-cards">
