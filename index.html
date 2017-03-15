@@ -16,6 +16,71 @@
     <div class="background">
       <div class='game-board'>
         <div class="game-board-img" >
+          <!-- The Modal -->
+          <button id="instructions-button">instructions</button>
+          <div class="instructions" >
+
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Welcome to CountTo21</h2>
+              </div>
+              <div class="modal-body">
+                <br/>
+                <p>This is a card counting game that uses probability to inform betting decisions.</p>
+                <br/>
+                <p>How to play:</p>
+                <p>- Your cards are in the center.</p>
+                <p>- Place smaller bets during the first few rounds.</p>
+                <p>- Increase bet size if the probability of getting a 17 or higher is above that it was during round 0. The larger the difference, the bigger the increase in bet size.</p>
+                <p>- The decision to hit or stay is informed by the expected value of the cards still in the deck.</p>
+                <p>- The AI will make betting decisions based on the dealer’s top card, weighing the risk of hitting to the dealer’s expected hand calculated from their top card.</p>
+                <br/>
+                <p>Notes:</p>
+                <p>- There are two decks, so there typically will be 9-10 rounds.</p>
+                <p>- The two players to your left and right always follow the AI recommendation and were included to show the change in the probability distribution function sooner.</p>
+                <br/>
+              </div>
+              <div class="modal-footer">
+                <h3>Good Luck</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("instructions-button");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal
+          btn.onclick = function() {
+              modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
           <form class="place-bet hidden" id="place-bet">
             <input type="submit" value="Place Bet">
             Click to place bet
