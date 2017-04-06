@@ -24,3 +24,37 @@ In addition to the webpack file, there will be three scripts involved in this pr
 * probability.js: creates the probability tree, keeps track of the card count, and calculates the expected value for the AI logic.
 * chart.js: handles the chart rendering logic.
 * player_ai.js:  calculates the probability of winning for each hand and then makes betting recommendations based on them.
+
+# Code Example
+
+# Probability Function
+
+```javascript
+p(num){
+
+  let values = [];
+  let cardKeys = [];
+  for (var i = 0; i < blackjackValues.length; i++) {
+    for (var j = i; j < blackjackValues.length; j++) {
+      if (blackjackValues[i] + blackjackValues[j] === num) {
+        values.push([blackjackValues[i], blackjackValues[j]]);
+        cardKeys.push([valueStrings[i], valueStrings[j]]);
+      }
+    }
+  }
+
+  let numerator = 0;
+  cardKeys.forEach(pair => {
+    if(pair[0] === pair[1]){
+      if (this.cardCount[pair[0]] > 1) {
+        numerator += (math.combinations(this.cardCount[pair[0]], 2));
+      }
+    } else {
+      if (this.cardCount[pair[0]] >= 1 && this.cardCount[pair[1]] >= 1) {
+        numerator += ((math.combinations(this.cardCount[pair[0]], 1) * math.combinations(this.cardCount[pair[1]], 1)));
+      }
+    }
+  });
+  return (numerator / math.combinations(this.deckCount, 2));
+}
+```
