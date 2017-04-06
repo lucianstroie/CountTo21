@@ -37,15 +37,15 @@
                 <p>This is a card counting game that uses probability to inform betting decisions.</p>
                 <br/>
                 <p>How to play:</p>
-                <p>- Your cards are in the center.</p>
+                <p>- Press the center button to progress through the game.</p>
                 <p>- Place smaller bets during the first few rounds.</p>
-                <p>- Increase bet size if the probability of getting a 17 or higher is above that it was during round 0. The larger the difference, the bigger the increase in bet size.</p>
+                <p>- Increase bet size if the probability of getting a 17 or higher is cumulatively above what it was during round 0. The larger the difference, the bigger the increase in bet size.</p>
                 <p>- The decision to hit or stay is informed by the expected value of the cards still in the deck.</p>
-                <p>- The AI will make betting decisions based on the dealer’s top card, weighing the risk of hitting to the dealer’s expected hand calculated from their top card.</p>
+                <p>- The AI will make betting decisions based on the dealer’s top card, weighing the risk of hitting against the dealer’s expected hand.</p>
                 <br/>
                 <p>Notes:</p>
                 <p>- There are two decks, so there typically will be 8-9 rounds.</p>
-                <p>- The two players to your left and right always follow the AI recommendation and were included to show the change in the probability distribution function sooner.</p>
+                <p>- The two players to your left and right always follow the AI recommendation and were included to show a change in the probability distribution function faster.</p>
                 <br/>
               </div>
               <div class="modal-footer">
@@ -106,6 +106,34 @@
           </script>
 
           <form class="place-bet hidden" id="place-bet">
+            <div class="one chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 1;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="five chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 5;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="ten chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 10;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="twentyfive chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 25;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="hundred chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 100;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="fivehundred chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 500;
+            document.getElementById('quantity').value = b;" >
+            </div>
+            <div class="thousand chip" onclick="let a = document.getElementById('quantity').value;
+            let b = JSON.parse(a) + 1000;
+            document.getElementById('quantity').value = b;" >
+            </div>
             <input type="submit" value="Place Bet">
             Click to place bet
             <input type="number" min="0" step="1" max="1000" value="5" id="quantity">

@@ -471,3 +471,40 @@ input#next-round {
   background-color: rgb(58, 102, 52);
   color: white;
 }
+
+.chip {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+}
+.chip:hover {
+  cursor: pointer;
+}
+.one {
+  left: -343px;
+  top: -58px;
+}
+.five {
+  left: -309px;
+  top: -42px;
+}
+.ten {
+  left: -276px;
+  top: -29px;
+}
+.twentyfive {
+  left: -241px;
+  top: -18px;
+}
+.hundred {
+  left: -208px;
+  top: -8px;
+}
+.fivehundred {
+  left: -174px;
+  top: 0px;
+}
+.thousand {
+  left: -140px;
+  top: px;
+}
